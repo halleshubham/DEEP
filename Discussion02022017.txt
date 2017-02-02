@@ -100,9 +100,9 @@ class cn_buildin_method(ZhpyPlugin):
           "अनुक्रम":"index",
           "क्रमित":"sort",
           # dict methods
-          "键列表":"keys",
+          #"":"keys",
           "值列表":"values",
-          "项目列表":"items",
+          "项表":"items",
           "更新":"update",
           "拷贝":"copy",
           # set methods
@@ -128,25 +128,25 @@ class cn_buildin_method(ZhpyPlugin):
           "设定属性":"setattr",
           "属性":"property",
           # build in functions
-          "长度":"len",
-          "最大值":"max",
-          "最小值":"min",
+          "लांबी":"len",
+          "कमाल":"max",
+          "किमान":"min",
           # build in methods
-          "列举":"enumerate",
-          "评估":"eval",
-          "过滤":"filter",
-          "映射":"map",
-          "范围":"range",
-          "快速范围":"xrange",
-          "总和":"sum",
-          "类型":"type",
-          "对象":"object",
-          "打包":"zip",
-          "帮助":"help",
-          "说明":"help",
-          "区域变量":"locals",
-          "全域变量":"globals",
-          "类方法":"classmethod",
+          "मोजणे":"enumerate",
+          "सोडवा":"eval",
+          "गाळणे":"filter",
+         # "映射":"map",
+          "वर्ग":"range",
+         # "快速范围":"xrange",
+          "बेरीज":"sum",
+          "प्रकार":"type",
+          "वस्तू":"object",
+         # "打包":"zip",
+          "मदत":"help",
+         # "说明":"help",
+          #"区域变量":"locals",
+         # "全域变量":"globals",
+         # "类方":"classmethod",
           }
 
 
@@ -217,17 +217,17 @@ class cn_zhpy(ZhpyPlugin):
           # logic
           "等于":"==",
           "不等于":"!=",
-          "非": "not",
-          "是":"is",
-          "为":"is",
-          "不是":"is not",
-          "不为":"is not",
+          "न": "not",
+          "साम्य":"is",
+          #"":"is",
+          "असाम्य":"is not",
+          #"不为":"is not",
           # private
-          "文件":"doc",
-          "初始化":"init",
-          "刪除":"del",
-          "描述":"repr",
-          "测试":"test",
+          "कागदपत्र":"doc",
+          #"":"init",
+          #"刪除":"del",
+         # "描述":"repr",
+          #"测试":"test",
           }
 
 #enter simplified chinese dict here
@@ -238,31 +238,31 @@ class cn_sys(ZhpyPlugin):
     title = "系统"
     description = "系统模块"
     keyword = {"系统":"sys",
-               "版本":"version",
-               "参数":"argv",
-               "结束":"exit",
-               "取得档案系统编码":"getfilesystemencoding",
-               "模块列表":"modules",
-               "平台":"platform",
-               "标准错误":"stderr",
-               "标准输入":"stdin",
-               "标准输出":"stdout",
+               "आवृत्ती":"version",
+              # "参数":"argv",
+               "बाहेरपडा":"exit",
+              # "取得档案系统编码":"getfilesystemencoding",
+               "विभाग":"modules",
+               "व्यासपीठ":"platform",
+              # "标准错误":"stderr",
+               "सामान्यइनपुट":"stdin",
+               "सामान्यआउटपुट":"stdout",
                # sys path with list methods
-               "路径":"path",
+               "मार्ग":"path",
                }
 
 class cn_traceback(ZhpyPlugin):
     """
     zhpy traceback simplified chinese plugin
     """
-    title = "系统"
-    description = "系统模组"
-    keyword = {"未定义":"is not defined",
-               "名称":"name",
-               "行":"line",
-               "档案":"File",
-               "不合法的":"invalid",
-               "语法":"syntax",
+    title = "शीर्षक"
+    description = "वर्णन"
+    keyword = "अपरिभाषित:"is not defined",
+               "नाव":"name",
+               "ओळ":"line",
+               "फाईल":"File",
+               "अयोग्य":"invalid",
+               "मांडणी":"syntax",
                }
                
                
